@@ -806,12 +806,217 @@ if (message.content.startsWith("$ban")) {
 };
 });
 
-client.on('message', msg => {
-  if(msg.content === '$help')
-              setTimeout(function() {  
-msg.reply('نتأسف البوت تحت التطوير لاستفسأر كل الفوندر')
-              }, 10000)
-});
+client.on("message", message => {
+	var prefix = "$";
+     if (message.content === "$help") {
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000") 
+      .setDescription(`
+	  
+	         Please Chose: 
+
+${prefix}help-p ⇏    **  | لعرض الاوامر العامه**  
+
+${prefix}help-a ⇏    **  | لعرض الاوامر الاداريه**  
+ 
+${prefix}help-g ⇏    **  | لعرض الاوامر الالعاب**  
+
+${prefix}help-m ⇏    **  | لعرض الاوامر الاغاني**  
+
+ملاحضه البوت محمي بكود الجحفله
+
+        `)
+   message.channel.sendEmbed(embed)
+    
+   }
+   }); 
+   
+   
+   
+   
+
+  
+client.on('message', message => {
+    if (message.content === "$help-p") {
+    let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#000000")
+  .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
+  
+  
+  
+  message.channel.sendEmbed(embed);
+  }
+  });
+  
+client.on('message', message => {
+    if (message.content === "$help-a") {
+    let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#000000")
+  .addField("Done | تــــم" , ":envelope: | :sleuth_or_spy::skin-tone-3:شيك علي في الخاص")
+  
+  
+  
+  message.channel.sendEmbed(embed);
+  }
+  });
+  
+  client.on('message', message => {
+    if (message.content === "$help-g") {
+    let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#000000")
+  .addField("سيتم عمل بوت العاب قريبأ" , ":sleuth_or_spy:صاحب البوت | ! Ã7MeĐ♕#3933 ")
+  
+  
+  
+  message.channel.sendEmbed(embed);
+  }
+  });
+  
+  
+  client.on('message', message => {
+    if (message.content === "$help-m") {
+    let embed = new Discord.RichEmbed()
+  .setAuthor(message.author.username)
+  .setColor("#000000")
+  .addField("سيتم عمل بوتات ميوزك قريبأ" , ":sleuth_or_spy:صاحب البوت | ! Ã7MeĐ♕#3933 ")
+  
+  
+  
+  message.channel.sendEmbed(embed);
+  }
+  });
+  
+
+  
+   client.on("message", message => {
+    if (message.content === "$help-a") {
+     const embed = new Discord.RichEmbed() 
+         .setThumbnail(message.author.avatarURL)
+         .setColor("#00FF00")
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/pb8WDe2 :scroll:
+         :hearts: صاحب البوت | ! Ã7MeĐ♕#3933  :hearts: :hearts: **`)
+   message.author.sendEmbed(embed)
+   
+   }
+   });
+  
+     client.on("message", message => {
+    if (message.content === "$help-p") {
+     const embed = new Discord.RichEmbed() 
+         .setThumbnail(message.author.avatarURL)
+         .setColor("#00FF00")
+         .setDescription(`**  السيرفر الرسمي للبوت :  :dove:  https://discord.gg/pb8WDe2 :scroll:
+         :hearts: صاحب البوت | ! Ã7MeĐ♕#3933  :hearts: :hearts: **`)
+   message.author.sendEmbed(embed)
+   
+   }
+   });
+  
+
+
+   client.on("message", message => {
+      if (message.content === "$help-p") {
+       const embed = new Discord.RichEmbed() 
+           .setThumbnail(message.author.avatarURL)
+           .setColor("#FF0000")
+           .setDescription(`**   :earth_africa: الأوامر العامه :earth_africa: **
+**============ **
+
+ **${prefix}server |يعرض لك معلومات عن السيرفر**:fire: 
+
+  **${prefix}bot | يعرض لك كل معلومات البوت**:computer: 
+  
+  **${prefix}count | يعرض لك عدد الاشخاص بالسيرفر بدون بوتات** :information_source:
+
+  **${prefix}invites | يعرض لك  عدد انفايتاتك بالسيرفر ** :microscope:
+    
+  **${prefix}topinvite | يعرض لك  عدد انفايتاتك بالسيرفر ** :microscope:
+	
+  **${prefix}roles | يعرض لك كل الرانكات بالسيرفر بشكل جميل**
+
+  **${prefix}me | يعرض لك عدد كل حالات الاشخاص وعدد البوتات وعدد الاشخاص**:selfie: 
+
+  **${prefix}id | لمعرفة معلوماتك ** :id:
+
+  **${prefix}bans | عدد الاشخاص المبندة **:no_entry: 
+
+  **${prefix}avatar | صورتك او صورة الي تمنشنو**:bust_in_silhouette:
+
+  **${prefix}هل تعلم  |هل تعلم **:small_blue_diamond: 
+
+  **${prefix}رابط l للحصول علي رابط السيرفر في الخاص **:small_orange_diamond: 
+
+  **${prefix}ping |  لمعرفة البنق** :confused: 
+  
+  **${prefix}uptime |  لمعرفة كام من وقت شغال البوت** :confused:
+  
+  **${prefix}botserver |  لمعرفة في كام سيرفر البوت** :confused:  
+  
+  **${prefix}voice |  لمعرفة كام شخص بالرومات الصوتية** :confused:
+  
+  **${prefix}اذكار l اذكار** :confused:
+  
+  **${prefix}rules| لمعرفة قوانين السيرفر باختصأر** :confused:
+  
+**  ======:blossom:نــتــمــنــآ لــكــم آســتــمـــتــآع :blossom:======  **`)
+
+     message.author.sendEmbed(embed)
+     
+     }
+     });	 
+
+	 
+
+  
+   client.on("message", message => {
+      if (message.content === "$help-a") {
+       const embed = new Discord.RichEmbed() 
+           .setThumbnail(message.author.avatarURL)
+           .setColor("#FF0000")
+           .setDescription(`**   :earth_africa: الادمنية اموار :earth_africa: **
+**============ **
+
+  **${prefix}move @user |  لسحب الشخص الى روومك** :confused: 
+  
+  **${prefix}moveall  لسحب الكل لروم صوتي** :confused:
+
+  **${prefix}bc | رسالة جماعية الى كل اعضاء السيرفر** :mega:
+
+  **${prefix}role @user <rank> | لأعطاء رتبة لعضو معين**:large_orange_diamond: 
+
+  **${prefix}roleremove @user <rank> | لازالة الرتبة من شخص معين** :orange_book: 
+
+  **${prefix}clear <numbr> | مسح الشات بعدد**:information_source: 
+
+  **${prefix}mute @user <reason> | اعطاء العضو ميوت لازم رتبة <Muted>**:mute:
+
+  **${prefix}unmute @user | لفك الميوت عن الشخص ** :loud_sound:
+
+  **${prefix}kick @user <reason> | طرد الشخص من السيرفر**  :outbox_tray:
+
+  **${prefix}ban @user <reason> | حضر الشخص من السيرفر** :no_entry:
+
+  **${prefix}mutechannel | تقفيل الشات**:no_entry:
+
+  **${prefix}unmutechannel | فتح الشات**:on:   
+
+  **${prefix}ct <name> | انشاء شات**:rolling_eyes:
+
+  **${prefix}cv <name> | انشاء رووم فويس**:crown:
+
+  **${prefix}nikename <user> |  لتغير اسم شخص معين** :confused:
+  
+  **${prefix}unbanall | لفك بان كل الي بالسيرفر** :confused:
+  
+**  ======:blossom:نــتــمــنــآ لــكــم آســتــمـــتــآع :blossom:======  **`)
+
+     message.author.sendEmbed(embed)
+     
+     }
+     });
 
 
 
