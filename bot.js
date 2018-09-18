@@ -780,9 +780,9 @@ client.on('message', message => {
     let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#000000")
-  .addField("$help |TG MUSIC 1")
-  .addField("$$help |TG MUSIC 2")
-  .addField("$$$help |TG MUSIC 3")
+  .addField("@help |TG MUSIC 1")
+  .addField("@@help |TG MUSIC 2")
+  .addField("@@@help |TG MUSIC 3")
   
   message.channel.sendEmbed(embed);
   }
