@@ -5,7 +5,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 client.on('ready', () => {
-     client.user.setActivity("$help",{type: 'WATCHING'});
+     client.user.setActivity("$help-By ا̍حۡــمۘــد#3933",{type: 'WATCHING'});
 
 });
 
